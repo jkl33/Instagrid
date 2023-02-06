@@ -7,37 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8410302C22AFD4F400196D66 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84AE1D1F22AEA770007F872D /* Delm-Medium.otf */; };
-		842319FF226E3AB500A4C253 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842319FE226E3AB500A4C253 /* GridView.swift */; };
-		843D56CD227891B600B2E78C /* Grid1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D56CC227891B600B2E78C /* Grid1.swift */; };
-		843D56CF227891D400B2E78C /* Grid3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D56CE227891D400B2E78C /* Grid3.swift */; };
-		843D56D12278925E00B2E78C /* Grid2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D56D02278925E00B2E78C /* Grid2.swift */; };
-		843D56D32278A36E00B2E78C /* RandomiseBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D56D22278A36E00B2E78C /* RandomiseBackgroundColor.swift */; };
 		84D1D2A9226F390600E3E8D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D1D2A8226F390600E3E8D7 /* Main.storyboard */; };
 		84E6F1D7226E2FF700C4453F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E6F1D6226E2FF700C4453F /* AppDelegate.swift */; };
 		84E6F1D9226E2FF700C4453F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E6F1D8226E2FF700C4453F /* ViewController.swift */; };
 		84E6F1DE226E2FF800C4453F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E6F1DD226E2FF800C4453F /* Assets.xcassets */; };
 		84E6F1E1226E2FF800C4453F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E6F1DF226E2FF800C4453F /* LaunchScreen.storyboard */; };
-		84F65A2D22B93C2A0092A3F6 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84D39A9222B9236100B43FC1 /* ThirstySoftRegular.otf */; };
-		84F6F123226F6D7300F7B136 /* ButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6F122226F6D7300F7B136 /* ButtonBar.swift */; };
+		BCB65B5E2964A6BA00B49119 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC4EFAA92964A27000258A1F /* Delm-Medium.otf */; };
+		BCB65B5F2964A6C000B49119 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC4EFAA82964A27000258A1F /* ThirstySoftRegular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		842319FE226E3AB500A4C253 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		843D56CC227891B600B2E78C /* Grid1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid1.swift; sourceTree = "<group>"; };
-		843D56CE227891D400B2E78C /* Grid3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid3.swift; sourceTree = "<group>"; };
-		843D56D02278925E00B2E78C /* Grid2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid2.swift; sourceTree = "<group>"; };
-		843D56D22278A36E00B2E78C /* RandomiseBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomiseBackgroundColor.swift; sourceTree = "<group>"; };
-		84AE1D1F22AEA770007F872D /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Delm-Medium.otf"; path = "Instagrid/Delm-Medium.otf"; sourceTree = SOURCE_ROOT; };
 		84D1D2A8226F390600E3E8D7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		84D39A9222B9236100B43FC1 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ThirstySoftRegular.otf; path = Instagrid/ThirstySoftRegular.otf; sourceTree = SOURCE_ROOT; };
 		84E6F1D3226E2FF700C4453F /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E6F1D6226E2FF700C4453F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E6F1D8226E2FF700C4453F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84E6F1DD226E2FF800C4453F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84E6F1DD226E2FF800C4453F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		84E6F1E0226E2FF800C4453F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E6F1E2226E2FF800C4453F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84F6F122226F6D7300F7B136 /* ButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBar.swift; sourceTree = "<group>"; };
+		BC4EFAA82964A27000258A1F /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		BC4EFAA92964A27000258A1F /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,42 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84231A07226E438F00A4C253 /* Controler */ = {
-			isa = PBXGroup;
-			children = (
-				84E6F1D8226E2FF700C4453F /* ViewController.swift */,
-				843D56D22278A36E00B2E78C /* RandomiseBackgroundColor.swift */,
-			);
-			path = Controler;
-			sourceTree = "<group>";
-		};
 		84610FF922AEA6EB0061C4B9 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				84AE1D1F22AEA770007F872D /* Delm-Medium.otf */,
-				84D39A9222B9236100B43FC1 /* ThirstySoftRegular.otf */,
+				BC4EFAA92964A27000258A1F /* Delm-Medium.otf */,
+				BC4EFAA82964A27000258A1F /* ThirstySoftRegular.otf */,
 			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		8482406E226E45410040436C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				84F6F122226F6D7300F7B136 /* ButtonBar.swift */,
-				842319FE226E3AB500A4C253 /* GridView.swift */,
-				843D56CC227891B600B2E78C /* Grid1.swift */,
-				843D56D02278925E00B2E78C /* Grid2.swift */,
-				843D56CE227891D400B2E78C /* Grid3.swift */,
-			);
-			name = View;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		8482406F226E45A40040436C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
+			name = Fonts;
+			path = ../Assets.xcassets;
 			sourceTree = "<group>";
 		};
 		84E6F1CA226E2FF600C4453F = {
@@ -109,9 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				84E6F1D6226E2FF700C4453F /* AppDelegate.swift */,
-				8482406F226E45A40040436C /* Model */,
-				8482406E226E45410040436C /* View */,
-				84231A07226E438F00A4C253 /* Controler */,
+				84E6F1D8226E2FF700C4453F /* ViewController.swift */,
 				84E6F1DD226E2FF800C4453F /* Assets.xcassets */,
 				84D1D2A8226F390600E3E8D7 /* Main.storyboard */,
 				84E6F1DF226E2FF800C4453F /* LaunchScreen.storyboard */,
@@ -179,9 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8410302C22AFD4F400196D66 /* Delm-Medium.otf in Resources */,
+				BCB65B5F2964A6C000B49119 /* ThirstySoftRegular.otf in Resources */,
+				BCB65B5E2964A6BA00B49119 /* Delm-Medium.otf in Resources */,
 				84D1D2A9226F390600E3E8D7 /* Main.storyboard in Resources */,
-				84F65A2D22B93C2A0092A3F6 /* ThirstySoftRegular.otf in Resources */,
 				84E6F1E1226E2FF800C4453F /* LaunchScreen.storyboard in Resources */,
 				84E6F1DE226E2FF800C4453F /* Assets.xcassets in Resources */,
 			);
@@ -195,12 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E6F1D9226E2FF700C4453F /* ViewController.swift in Sources */,
-				843D56CF227891D400B2E78C /* Grid3.swift in Sources */,
-				843D56D12278925E00B2E78C /* Grid2.swift in Sources */,
-				843D56CD227891B600B2E78C /* Grid1.swift in Sources */,
-				84F6F123226F6D7300F7B136 /* ButtonBar.swift in Sources */,
-				842319FF226E3AB500A4C253 /* GridView.swift in Sources */,
-				843D56D32278A36E00B2E78C /* RandomiseBackgroundColor.swift in Sources */,
 				84E6F1D7226E2FF700C4453F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
