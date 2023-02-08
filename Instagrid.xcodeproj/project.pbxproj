@@ -105,6 +105,10 @@
 		84E6F1CB226E2FF600C4453F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+				);
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = Jotaro;

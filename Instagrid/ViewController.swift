@@ -11,15 +11,14 @@ import UIKit
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet var upSwipe: UISwipeGestureRecognizer!
     @IBOutlet var leftSwipe: UISwipeGestureRecognizer!
+    @IBOutlet var gridContainer: UIView!
     @IBOutlet var gridLayouts: [UIView]!
     @IBOutlet var buttonBar: [UIButton]!
-    var currentImageView: UIImageView?
     var currentView: UIView!
     var currentButton: UIButton?
     var imagePicker = UIImagePickerController()
 
     @IBAction func layoutButtonIsClicked(_ sender: UIButton) {
-        buttonBar[1].isSelected = true
         for element in buttonBar {
             element.isSelected = element == sender
         }
@@ -43,12 +42,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.present(self.imagePicker, animated: true, completion: nil)
     }
 
-    @IBAction func share(_ sender: UISwipeGestureRecognizer) {
-        if currentView == nil {
-            currentView = gridLayouts[0]
+    @IBAction func animateView(_ sender: UISwipeGestureRecognizer) {
+        let screenHeight = UIScreen.main.bounds.height
+        let screenWidth = UIScreen.main.bounds.width
+        var directionTransform: CGAffineTransform
+
+        if upSwipe.isEnabled == true {
+            directionTransform = CGAffineTransform(translationX: 0, y: -screenHeight)
+        } else {
+            directionTransform = CGAffineTransform(translationX: -screenWidth, y: 0)
         }
-        let share = UIActivityViewController(activityItems: [tranformCurrentView(view: currentView)], applicationActivities: [])
-        present(share, animated: true)
+        UIView.animate(withDuration: 2, animations: {
+            self.gridContainer.transform = directionTransform
+        }, completion: {_ in
+            self.share()
+        })
     }
 
     override func viewDidLoad() {
@@ -56,13 +64,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         determineDeviceOrientation()
         upSwipe.direction = .up
         leftSwipe.direction = .left
+        gridLayouts.sort { $0.tag < $1.tag }
         gridLayouts[2].isHidden = true
         buttonBar[1].isSelected = true
+        setDefaultView()
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
 
         determineDeviceOrientation()
+    }
+
+    func setDefaultView() {
+        if currentView == nil {
+            currentView = gridLayouts[1]
+        }
     }
 
     func determineDeviceOrientation() {
@@ -76,9 +92,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.imagePicker.dismiss(animated: true, completion: nil)
         }
     }
+
+    func share() {
+        let share = UIActivityViewController(activityItems: [tranformCurrentView(view: currentView)], applicationActivities: nil)
+        share.completionWithItemsHandler = { activity, success, items, error in
+            self.animateReverse()
+        }
+        present(share, animated: true, completion: nil)
+    }
+
+    func animateReverse() {
+        UIView.animate(withDuration: 2, animations: {
+            self.gridContainer.transform = CGAffineTransformIdentity
+        }, completion: nil)
+    }
+
     func tranformCurrentView(view: UIView) -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
-        let transformedImage = renderer.image { ctx in
+        let transformedImage = renderer.image {_ in
             view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
         }
         return transformedImage

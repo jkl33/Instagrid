@@ -397,25 +397,26 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="gridContainer" destination="nER-Ff-BNd" id="SYK-Bf-QL1"/>
                         <outlet property="leftSwipe" destination="fwo-ld-uRj" id="CxL-1r-4L2"/>
                         <outlet property="upSwipe" destination="W5U-Fw-09w" id="EaW-4u-e2j"/>
                         <outletCollection property="buttonBar" destination="9qD-Rz-Bnj" collectionClass="NSMutableArray" id="nhM-LD-G9G"/>
                         <outletCollection property="buttonBar" destination="7sm-6p-GpO" collectionClass="NSMutableArray" id="MfP-Xq-pQP"/>
                         <outletCollection property="buttonBar" destination="TJB-0a-lHF" collectionClass="NSMutableArray" id="E2F-fs-zPw"/>
-                        <outletCollection property="gridLayouts" destination="mbL-yb-unE" collectionClass="NSMutableArray" id="cgR-Zj-8Pc"/>
-                        <outletCollection property="gridLayouts" destination="Swn-Om-Z82" collectionClass="NSMutableArray" id="H67-OQ-lOp"/>
-                        <outletCollection property="gridLayouts" destination="Q6M-kU-HkS" collectionClass="NSMutableArray" id="wme-Sm-fey"/>
+                        <outletCollection property="gridLayouts" destination="Q6M-kU-HkS" collectionClass="NSMutableArray" id="MlQ-P7-qpN"/>
+                        <outletCollection property="gridLayouts" destination="Swn-Om-Z82" collectionClass="NSMutableArray" id="5kB-TE-o0F"/>
+                        <outletCollection property="gridLayouts" destination="mbL-yb-unE" collectionClass="NSMutableArray" id="aAc-RF-TcA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="fwo-ld-uRj">
                     <connections>
-                        <action selector="share:" destination="BYZ-38-t0r" id="aGQ-D0-PiK"/>
+                        <action selector="animateView:" destination="BYZ-38-t0r" id="nWU-6V-eXG"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="W5U-Fw-09w">
                     <connections>
-                        <action selector="share:" destination="BYZ-38-t0r" id="Z9r-R7-tiN"/>
+                        <action selector="animateView:" destination="BYZ-38-t0r" id="0nP-U7-PHM"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
