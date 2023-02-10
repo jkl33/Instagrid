@@ -71,7 +71,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-
         determineDeviceOrientation()
     }
 
